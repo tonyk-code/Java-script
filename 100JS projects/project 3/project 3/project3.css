@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(230, 230, 230);
+    font-family: cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container{
+    background-color: slateblue;
+    max-width: 450px;
+    min-width: 350px;
+    width: 85%;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+}
+
+img{
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50px);
+    top: 250px;
+}
+
+.quote{
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+.author-name{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
