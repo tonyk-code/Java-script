@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f0f0f0;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.timer-display{
+    font-weight: 700;
+    text-shadow: 2px 2px #f8a5c2;
+    color: #f92672;
+    font-size: 7rem;
+}
+
+.timer-display-opacity{
+    opacity: 0.2;
+    transition: opacity 0.2s;
+}
+
+@media (min-width:801px){
+    .timer-display{
+        transition: 1s ease;
+    }
+
+    .button-element{
+        transition: 1s ease;
+    }
+
+    .start,.stop,.reset{
+        transition: 1s ease;
+        scale: 2;
+    }
+}
+
+@media (max-width:800px){
+    .timer-display{
+        transition: 1s ease; 
+        font-size: 3rem;
+    }
+
+    .button-element{
+        transition: 1s ease; 
+        font-size: 3rem;
+    }
+    .start,.stop,.reset{
+        transition: 1s ease;
+    }
+}
+
+.button-element{
+    display: flex;
+    justify-content: space-between;
+}
+
+.start, .stop, .reset{
+    padding: 10px 20px 10px 20px;
+    margin: 10px 20px 0 0;
+    border: none;
+    background-color: #f92672;
+    color: white;    
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.start:hover, .stop:hover, .reset:hover{
+    background-color: #ff9dc1;
+    transition: 0.1s;
+    scale: 1.05;
+}
+.start:active, .stop:active, .reset:active{
+    background-color: #ff9dc1;
+    transition: 0.1s;
+    scale: 0.9;
+}
+
+

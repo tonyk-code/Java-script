@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    width: 400px;
+}
+
+h1{
+    font-weight: 100;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 0.75rem;
+    line-height: 20px;
+}
+
+.watch-now{
+    margin-top: 10px;
+    padding: 7px 17px 7px 17px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.watch-now:hover{
+    background-color: orange;
+}
+
+.active1{
+    display: none;
+}
+
+.video-css{
+    display: flex;
+    flex-direction: column;
+} 
+
+@keyframes animate{
+    0%{
+        opacity: 0;
+        scale: 0.1;
+    }
+    
+}
+
+.close-button{
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    animation-duration: 1s;
+    animation-name: buttonanimate;
+}
+
+@keyframes buttonanimate{
+    0%{
+        top: -20px;
+    }
+}
+
+.close-button:hover{
+    transition: 0.2s ease;
+    scale: 1.09;
+    text-shadow: 1px 1px 3px white;
+}
+
+.active2{
+    display: none;
+}
+
+.video-css video{
+    width: 80%;
+    margin: 0 auto ;
+    animation-duration: 0.5s;
+    animation-name: animate;
+}
+
