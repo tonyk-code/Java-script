@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: lightgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150vh;
+}
+
+.container{
+    background-color: white;
+    width: 90%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.319);
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+.p1{
+    margin: 10px 0;
+}
+
+#input-number{
+    outline: none;
+    padding: 5px 20px;
+    text-align: center;
+}
+
+.display-message{
+    font-size: 0.7rem;
+    color: red;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.get-photos{
+    padding: 10px 40px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to top right , #adfda2 , #11d3f3);
+    color: rgb(22, 22, 22);
+
+}
+
+.get-photos:hover{
+    transition: all 0.2s ease;
+    background: linear-gradient(to bottom left , #adfda2 , #11d3f3);
+    box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.238);
+    color: white;
+    filter: grayscale(0.2);
+    transform: translate(1px , -1px);
+    cursor: pointer;
+}
+
+.get-photos:active{
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.456);
+    background: linear-gradient(to bottom left , #96e28c , #16c7e2);
+
+    
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.image-display{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    gap: 10px;
+}
