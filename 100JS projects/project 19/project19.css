@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: pink;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+.container-password{
+    border: 1.5px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#input-password{
+    border: none;
+    background-color: transparent;
+    font-size: large;
+    outline: none;
+    letter-spacing: 2px;
+}
+
+.fa-copy{
+    color: #2c2c2c5e;
+    cursor: pointer;
+    scale: 0.8;
+}
+
+.fa-copy:hover{
+    transition: 150ms ease;
+    scale: 0.88;
+    color: #333;
+}
+
+.btn-generate{
+    margin-top: 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-generate:hover{
+    scale: 1.05;
+    background-color: #555;
+    transition: 150ms ease;
+}
+
+.btn-generate:active{
+    background-color:lightslategray;
+    scale: 0.95;
+    transition: all 150ms ease;
+}
+
+.copied-message{
+    position: fixed;
+    background-color: rgb(123, 223, 123);
+    box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.342);
+    border-radius: 10px;
+    letter-spacing: 1px;
+    word-spacing: 10px;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    transform: translate(200%);
+    transition: all 150ms ease;
+}
+
+.copied-message-translate{
+    transform: translate(0%);
+    transition: all 150ms ease;
+}

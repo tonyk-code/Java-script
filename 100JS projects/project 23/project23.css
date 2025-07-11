@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: large;
+    background-color: yellow;
+}
+
+span{
+    display: block;
+    color: green;
+    font-size: 2rem;
+}
+
+.container{
+    display: flex;
+    gap: 60px;
+}
+
+.fa-solid,.fa-brands{
+    scale: 2;
+    position: relative;
+    top: -33px;
+    z-index: 10;
+}
+
+.year-experience,.website-made,.apps-made{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed green;
+    padding: 20px 10px;
+}
+
+p{
+    font-weight: bold;
+    font-size: 1rem;
+}

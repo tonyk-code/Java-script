@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Courier New', Courier, monospace;
+    background: linear-gradient(to right , lightgreen , lightblue);
+}
+
+.p1,.p2{
+    color: rgba(0, 0, 139, 0.696);
+    text-align: center;
+}
+
+.p1{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.p2{
+    margin-bottom: 30px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 40px;
+    justify-content: center;
+    padding: 50px;  
+}
+
+.note{
+    width: 300px;
+    height: 200px;
+    padding: 30px;
+    resize: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.151) , -1px -1px 5px rgba(0, 0, 0, 0.151);
+    outline: none;
+}
+
+.note:hover{
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.296) , -2px -2px 7px rgba(0, 0, 0, 0.296);
+    scale: 1.02;
+}
+
+::placeholder{
+    color: rgba(0, 0, 0, 0.452);
+}
+
+.add-note{
+    width: 300px;
+    height: 200px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.433);
+    border-radius: 10px;
+    font-size: 3rem;
+    font-weight: 1000;
+    box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.625) , -1px -1px 1px rgba(255, 255, 255, 0.625) ;
+    color: rgba(0, 0, 0, 0.284);
+}
+
+.add-note:hover{
+    background-color: rgba(255, 255, 255, 0.744);
+    color: rgba(0, 0, 0, 0.534);
+    transition: 0.2s ease;
+}
