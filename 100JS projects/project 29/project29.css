@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    display: flex;
+    gap: 2rem;
+}
+
+.position-x,
+.position-y{
+    background-color: rgba(255, 255, 255, 0.196);
+    padding: 2rem 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+h4{
+    position: relative;
+    top: -80px;
+}
+
+span{
+    font-size: 3rem;
+    color: #fff;
+}

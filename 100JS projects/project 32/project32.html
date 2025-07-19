@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <link rel="stylesheet" href="project32.css">
+</head>
+<body>
+    <div class="card">
+        <div class="card__content">
+            <h2>Loan Calculator</h2>
+
+            <p>Loan Amount $</p>
+            <input type="number" class="input-number" name="loan-amount" id="loan-amount" value="10000" max="100000" step=".1" required>
+            
+            <p>Interest Rate %</p>
+            <input type="number" class="input-number" name="interest-rate" id="interest-rate" value="5" max="10" step=".1" required>
+
+            <p>Month to pay $</p>
+            <input type="number" class="input-number" name="months" id="months" value="12" max="60" step="1" required>
+
+            <p>Monthly Payment: <span id="monthly-payment">0.00$</span></p>
+
+            <button>Calculate</button>
+        </div>
+    </div>
+    
+
+
+    <script src="project32.js"></script>
+</body>
+</html>

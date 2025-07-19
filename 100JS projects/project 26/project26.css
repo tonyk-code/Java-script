@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(3, 16, 50, 0.918);
+}
+
+.container{
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255, 255, 255, 0.082);
+    width: 80%;
+    padding: 20px 1px;
+    display: flex;
+    justify-content: space-evenly;
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border-radius: 10px;
+    outline-offset: 3px;
+    outline: 1px solid rgba(255, 255, 255, 0);
+    box-shadow: -3px 3px 20px rgba(202, 202, 202, 0.095);
+}
+
+.container:hover{
+    transition: all 0.1s linear;
+    outline: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.button{
+    background-color: transparent;
+    border: none; 
+    position: relative;
+    top: -20px;
+    padding: 0 10px;
+
+}
+
+.icon{
+    position: absolute;
+    top: -7px;
+    transform: scale(3);
+}
+
+.green-dot{
+    background-color: rgba(240, 248, 255, 0.355);  
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -35px;
+    left: 17px;
+    transform: translate();
+}
+
+.button-active{
+    transition: all 0.3s ease;
+    top: -30px;
+}
+
+.icon-active{
+    transition: all 0.3s ease;
+    transform: scale(4);
+}
+.green-dot-active{
+    background-color: rgb(6, 255, 6);
+}
+
+
+
